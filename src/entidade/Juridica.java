@@ -1,29 +1,32 @@
 package entidade;
+
 /**
  * Programa Classe abstrata - pessoas fisica e juridica
  * 
  * @author wagne
- * @since 03/07/2022
+ * @since 04/07/2022
+ * @version 0.2
  */
-public class Juridica extends Pessoa{
+public class Juridica extends Pessoa {
+	private String cnpj;
 	
-	public static final double SALDOCONTAJURIDICA = 242010050.00;
-	
-	
-	private double saldocontajuridica;
+	public String getCnpj() {
+		return cnpj;
+	}
 
-//	private double saldo;
-	//private int tipoDaConta;
-
-	public Double getSaldo() {
-	       // return salario;
-	    	 return SALDOCONTAJURIDICA;
-	    }
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+	}
 
 	@Override
 	public double saldo() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 20000.00;
 	}
+
 	
+	
+	
+	
+
 }

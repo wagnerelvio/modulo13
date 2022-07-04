@@ -3,30 +3,30 @@ package entidade;
  * Programa Classe abstrata - pessoas fisica e juridica
  * 
  * @author wagne
- * @since 03/07/2022
+ * @since 04/07/2022
+ * @version 0.2
  */
 public class Fisica extends Pessoa {
 
+	private String cpf;
 	
-	public static final double SALDO = 10050.00;
-	//public static final double HORAAULADISCIPLINAPORDIA = 3;
-	//public static final double VALORHORAAULADISCIPLINAPORDIA = 100;
-	
-	private double saldo;
-	//private int tipoDaConta;
+	public String getCpf() {
+		return cpf;
+	}
 
-	public Double getSaldo() {
-	       // return salario;
-	    	 return SALDO;
-	    }
- 
-	
-	
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
 	@Override
 	public double saldo() {
 		// TODO Auto-generated method stub
-		return SALDO;
+		return 1200.00;
 	}
+	
+	
+	
+	
 
 	 
 

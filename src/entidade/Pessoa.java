@@ -3,7 +3,8 @@ package entidade;
  * Programa Classe abstrata - pessoas fisica e juridica
  * 
  * @author wagne
- * @since 03/07/2022
+ * @since 04/07/2022
+ * @version 0.2
  */
 public abstract class Pessoa {
 
@@ -14,6 +15,7 @@ public abstract class Pessoa {
 	private String endereco;
 	private String numeroConta;
 	private String tipoDaConta;
+	private String saldo;
 
 	public abstract double saldo();
 
@@ -70,4 +72,13 @@ public abstract class Pessoa {
 		this.tipoDaConta = tipoDaConta;
 	}
 
+	public String getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(String saldo) {
+		this.saldo = saldo;
+	}
+
+	
 }

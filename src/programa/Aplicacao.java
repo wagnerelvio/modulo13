@@ -3,12 +3,16 @@ package programa;
  * Programa Classe abstrata - pessoas fisica e juridica
  * 
  * @author wagne
- * @since 03/07/2022
+ * @since 04/07/2022
+ * @version 0.2
  */
+
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 import entidade.Fisica;
+import entidade.Juridica;
 import entidade.Pessoa;
 
 public class Aplicacao {
@@ -28,12 +32,12 @@ public class Aplicacao {
 
 		System.out.println("\n **********************************");
 		System.out.println(" ********* Pessoa Juridica********** ");
-		Fisica juridica = new Fisica();
-		juridica.setNome("J&A");
-		juridica.setSobrenome("Company");
-		juridica.setNumeroConta("202");
-		juridica.setTipoDaConta("Juridica");
-		imprimir(juridica);
+		Juridica empresa = new Juridica();
+		empresa.setNome("J&A");
+		empresa.setSobrenome("Company");
+		empresa.setNumeroConta("202");
+		empresa.setTipoDaConta("Juridica");
+		imprimir(empresa);
 
 	}
 
